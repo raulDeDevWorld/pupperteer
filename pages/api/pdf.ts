@@ -5,7 +5,7 @@ const Handler: NextApiHandler = async (_req, res) => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
 
-  await page.goto('http://localhost:3000')
+  await page.goto('https://precio-justo-v2.vercel.app')
   await page.emulateMediaType('screen')
 
   // Create PDF Buffer
